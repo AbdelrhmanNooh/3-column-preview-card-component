@@ -1,0 +1,117 @@
+/* ;
+font-family: 'Lexend Deca', sans-serif;
+=================================
+font-family: 'Big Shoulders Display', cursive;
+- Font size: 15px
+ Family: [Lexend Deca] Weights: 400
+
+- Family: [Big Shoulders Display] Weights: 700
+*/
+* {
+    box-sizing: border-box;
+}
+:root {
+    --rightorange-color: hsl(31, 77%, 52%);
+    --Darkcyan-color: hsl(184, 100%, 22%);
+    --Verydarkcyan-color: hsl(179, 100%, 13%);
+    --Transparentwhite-color-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray-color-background-headings-buttons: hsl(0, 0%, 95%);
+}
+@media (max-width : 675px) {
+    .colm-holder {
+        flex-direction: column;
+        margin-bottom: 300px;
+        margin-top: 400px;
+    }
+}
+body {
+    background-color: var(--Verylightgray-color-background-headings-buttons);
+}
+.colm-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* flex-wrap: wrap;  */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.colm-holder .colm {
+    width: 245px;
+    height: 451px;
+    padding: 35px;
+    position: relative;
+}
+.colm-holder .orange {
+    background-color: var(--rightorange-color);
+    border-radius: 6px 0px 0px 6px ;
+}
+.colm-holder .Darkcyan {
+    background-color: var(--Darkcyan-color);
+}
+.colm-holder .Verydarkcyan {
+    background-color: var(--Verydarkcyan-color);
+    border-radius: 0px 6px 6px 0px ;
+}
+.colm-holder .colm .headings h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:700 ;
+    font-size: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.colm-holder .colm .headings p {
+    font-family: 'Big Shoulders Display', cursive;
+    Font-size: 15px;
+    line-height: 1.8;
+    color: #e2dbdb;
+    max-width: 204px;
+}
+.colm-holder .colm button {
+    transform: translate(-50%, -50%);
+    left: 39%;
+    top: 82%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 34px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 26px;
+    font-family: 'Big Shoulders Display', cursive;
+    cursor: pointer;
+}
+.colm-holder  .orange button {
+    color: var(--rightorange-color);
+}
+.colm-holder  .Darkcyan button {
+    color:var(--Darkcyan-color) ;
+}
+.colm-holder  .Verydarkcyan button {
+    color: var(--Verydarkcyan-color);
+}
+.colm-holder  .orange button:hover {
+    background-color: var(--rightorange-color);
+    border-color: white;
+    color: white;
+    border: .5px solid white;
+}
+.colm-holder  .Darkcyan button:hover {
+    background-color: var(--Darkcyan-color);
+    border-color: white;
+    color: white;
+    border: .5px solid white;
+    cursor: pointer;
+}
+.colm-holder  .Verydarkcyan button:hover {
+    background-color: var(--Verydarkcyan-color);
+    border-color: white;
+    color: white;
+    border: .5px solid white;
+}
